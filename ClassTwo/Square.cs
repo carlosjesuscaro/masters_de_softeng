@@ -6,7 +6,7 @@ public class Square
     private int x;
     private int y;
     private int size;
-
+    
     // Another example on setting up getter and setter
     // public int example { get; set; }
     

@@ -4,5 +4,11 @@ using ClassTwo;
 
 Console.WriteLine("Hello, World!");
 Square sqr = new Square();
-Console.WriteLine(sqr.ComputeArea());
-Console.WriteLine(sqr.ComputePerimeter());
+Console.WriteLine("Square examples:");
+Console.WriteLine("Area: " + sqr.ComputeArea());
+Console.WriteLine("Perimeter: " + sqr.ComputePerimeter());
+
+Console.WriteLine("\nRectangle examples:");
+Rectangle rec = new Rectangle();
+Console.WriteLine("Area: " + rec.ComputeArea());
+Console.WriteLine("Perimeter: " + rec.ComputePerimeter());
