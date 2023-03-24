@@ -10,5 +10,7 @@ Console.WriteLine("Perimeter: " + sqr.ComputePerimeter());
 
 Console.WriteLine("\nRectangle examples:");
 Rectangle rec = new Rectangle();
+rec.A = 10;
+rec.B = 20;
 Console.WriteLine("Area: " + rec.ComputeArea());
 Console.WriteLine("Perimeter: " + rec.ComputePerimeter());

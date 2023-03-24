@@ -1,3 +1,5 @@
+using System.Drawing;
+
 namespace ClassTwo;
 
 public class Rectangle
@@ -5,18 +7,18 @@ public class Rectangle
     // Attributes
     private int x;
     private int y;
-    public int a { get; set; }
-    public int b { get; set; }
+    public int A { get; set;  }
+    public int B { get; set;  }
 
     // Methods
     public int ComputeArea()
     {
-        return this.a * this.b;
+        return this.A * this.B;
     }
 
     public int ComputePerimeter()
     {
-        return 2 * (this.a + this.b);
+        return 2 * (this.A + this.B);
     }
 
     // Constructor
@@ -24,8 +26,6 @@ public class Rectangle
     {
         this.x = 0;
         this.y = 0;
-        this.a = 2;
-        this.b = 4;
     }
 
 }
