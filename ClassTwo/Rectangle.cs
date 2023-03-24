@@ -9,6 +9,12 @@ public class Rectangle
     private int y;
     public int A { get; set;  }
     public int B { get; set;  }
+    private string name;
+    public string Name
+    {
+        get { return name; }
+        set { this.name = value; }
+    }
 
     // Methods
     public int ComputeArea()
