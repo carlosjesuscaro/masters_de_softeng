@@ -35,4 +35,9 @@ public class Rectangle
         this.y = 0;
     }
 
+    public Rectangle ShallowCopy()
+    {
+        return (Rectangle)this.MemberwiseClone();
+    }
+
 }
