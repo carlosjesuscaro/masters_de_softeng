@@ -8,8 +8,9 @@ public class Rectangle
     private int x;
     private int y;
     public int A { get; set;  }
-    public int B { get; set;  }
-    private string name;
+    public int B { get; set; }
+
+    public string name;
     public string Name
     {
         get { return name; }

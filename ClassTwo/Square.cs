@@ -6,8 +6,18 @@ public class Square
     private int x;
     private int y;
     private int size;
+
+    public int Area
+    {
+        get { return this.size * this.size; }
+    }
     
-    // Another example on setting up getter and setter
+    public int Perimeter
+    {
+        get { return this.size * 4; }
+    }
+    
+    // Another example on setting up getter and setter:
     // public int example { get; set; }
     
     // Getter
@@ -44,13 +54,20 @@ public class Square
     */
     
     // Methods
-    public int ComputePerimeter()
+    public void TranslateX(int tx)
     {
-        return this.size * 4;
+        x += tx;
     }
-    public int ComputeArea()
+    
+    public void TranslateY(int ty)
     {
-        return this.size * this.size;
+        y += ty;
+    }
+
+    public void TranslateXY(int tx, int ty)
+    {
+        this.TranslateX(tx);
+        this. TranslateY(ty);
     }
 
 }

@@ -5,8 +5,8 @@ using ClassTwo;
 Console.WriteLine("Hello, World!");
 Square sqr = new Square();
 Console.WriteLine("Square examples:");
-Console.WriteLine("Area: " + sqr.ComputeArea());
-Console.WriteLine("Perimeter: " + sqr.ComputePerimeter());
+Console.WriteLine("Area: " + sqr.Area);
+Console.WriteLine("Perimeter: " + sqr.Perimeter);
 
 Console.WriteLine("\nRectangle examples:");
 Rectangle rec = new Rectangle();
@@ -17,3 +17,7 @@ rec.Name = Console.ReadLine();
 Console.WriteLine("Area: " + rec.ComputeArea());
 Console.WriteLine("Perimeter: " + rec.ComputePerimeter());
 Console.WriteLine("Rectangle name: " + rec.Name);
+
+// Checking the hash code of an object
+Console.WriteLine("\nSquare hash: " + sqr.GetHashCode());
+Console.WriteLine("Rectangle hash: " + rec.GetHashCode());
