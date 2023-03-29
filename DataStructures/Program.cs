@@ -85,6 +85,7 @@ while (stack.Count > 0)
 {
     Person perst = stack.Pop();
     Console.WriteLine(perst);
+    Console.WriteLine($"Stack count within the loop: {stack.Count}");
 }
 Console.WriteLine($"Stack count: {stack.Count}");
 
