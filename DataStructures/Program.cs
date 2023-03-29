@@ -38,4 +38,29 @@ foreach (Person person in persList)
 Person p = persList.ElementAt(1);
 Console.WriteLine(p);
 
+// List / ArrayList
+// =================
+
+List<Person> pallist = new List<Person>();
+pallist.Add(new Person("Waldo", "Jesus Caro", "Peru"));
+pallist.RemoveAt(0);
+pallist.Add(new Person("Carlos", "Jesus Caro", "Peru"));
+pallist.Add(new Person("Alyson", "Jesus Caro", "Finland"));
+pallist.Add(new Person("Natalia", "Jesus Caro", "Canada"));
+pallist.Add(new Person("Lucas", "Jesus Caro", "Canada"));
+
+int length = pallist.Count();
+Console.WriteLine($"\nThe list has {length} elements");
+
+// Looping through the list
+for (int i = 0; i < length; i++)
+{
+    Person person = pallist[i];
+    Console.WriteLine($"\n{person}");
+}
+
+foreach (Person person in pallist)
+{
+    Console.WriteLine($"\n{person}");
+}
 
