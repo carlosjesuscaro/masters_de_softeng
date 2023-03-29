@@ -64,3 +64,27 @@ foreach (Person person in pallist)
     Console.WriteLine($"\n{person}");
 }
 
+// Stack
+// ======
+
+Stack<Person> stack = new Stack<Person>();
+stack.Push(new Person("Carlos", "Jesus Caro", "Peru"));
+stack.Push(new Person("Alyson", "Jesus Caro", "Finland"));
+stack.Push(new Person("Natalia", "Jesus Caro", "Canada"));
+stack.Push(new Person("Lucas", "Jesus Caro", "Canada"));
+
+Console.WriteLine($"\nStack length: {stack.Count}");
+
+// Looping options
+foreach (Person peep in stack)
+{
+    Console.WriteLine(peep);
+}
+
+while (stack.Count > 0)
+{
+    Person perst = stack.Pop();
+    Console.WriteLine(perst);
+}
+Console.WriteLine($"Stack count: {stack.Count}");
+
