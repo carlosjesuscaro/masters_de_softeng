@@ -89,3 +89,36 @@ while (stack.Count > 0)
 }
 Console.WriteLine($"Stack count: {stack.Count}");
 
+// Dictionary
+// ==========
+
+Dictionary<string, Person> dictPers  = new Dictionary<string, Person>();
+Person perstoinsert = new Person("Carlos", "Jesus Caro", "Peru");
+dictPers[perstoinsert.Fullname] = perstoinsert;
+perstoinsert = new Person("Alyson", "Jesus Caro", "Finland");
+dictPers[perstoinsert.Fullname] = perstoinsert;
+perstoinsert = new Person("Natalia", "Jesus Caro", "Canada");
+dictPers[perstoinsert.Fullname] = perstoinsert;
+perstoinsert = new Person("Lucas", "Jesus Caro", "Canada");
+dictPers[perstoinsert.Fullname] = perstoinsert;
+perstoinsert = new Person("Waldo", "Jesus Caro", "Haiti");
+dictPers[perstoinsert.Fullname] = perstoinsert;
+
+Person retrieve = dictPers["Carlos Jesus Caro"];
+Console.WriteLine($"\n{retrieve}");
+
+Console.WriteLine("\nLooping through keys");
+foreach (string key in dictPers.Keys)
+{
+    Console.WriteLine(key);
+}
+
+Console.WriteLine("\nLooping through values");
+foreach (Person value in dictPers.Values)
+{
+    Console.WriteLine(value);
+}
+
+dictPers.Remove("Waldo Jesus Caro");
+int cnt = dictPers.Count;
+Console.WriteLine($"\nThe length of the dictionary is {cnt}");
