@@ -8,3 +8,8 @@ ClassOne/bin
 ClassOne/obj
 ClassTwo/bin
 ClassTwo/obj
+DataStructures/bin
+DataStructures/obj
+.DS_Store
+DataStructures/DataStructures.csproj
+
