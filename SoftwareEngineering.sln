@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassTwo", "ClassTwo\ClassT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{79F6C460-7DD4-4F86-B670-6E4462DB427E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class Three", "Class Three\Class Three.csproj", "{B31F0DA5-4D7D-4FB0-A0E0-5C6C893107BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassThree-HorizontalRelations", "ClassThree-HorizontalRelations\ClassThree-HorizontalRelations.csproj", "{B31F0DA5-4D7D-4FB0-A0E0-5C6C893107BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
