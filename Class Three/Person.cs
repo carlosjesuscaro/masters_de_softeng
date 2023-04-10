@@ -4,8 +4,8 @@ internal class Person
 {
     private Head hd { get; }
 
-    public Person(Head h)
+    public Person()
     {
-        this.hd = h;
+        this.hd = new Head(this);
     }
 }
