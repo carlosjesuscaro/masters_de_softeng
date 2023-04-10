@@ -5,9 +5,11 @@ internal class Student
 {
     public List<Teacher> Teachers { get; }
     
-    public Student()
+    public Student(Teacher teach)
     {
         this.Teachers = new List<Teacher>();
+        // To respect the cardinality of at least have 1
+        this.Teachers.Add(teach);   
     }
 
     public void startClass(Teacher teacher)
@@ -22,6 +24,6 @@ internal class Student
     public bool stopClass(Teacher teacher)
     {
         return this.Teachers.Remove(teacher);
+        
     }
-
 }
