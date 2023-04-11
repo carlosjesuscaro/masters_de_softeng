@@ -10,3 +10,25 @@ mozo.Bite();
 
 Duck donald = new Duck("Donald", 4, 2);
 donald.Move();
+
+LinkedList<Animal> farm = new LinkedList<Animal>();
+farm.AddLast(mozo);
+farm.AddLast(donald);
+
+foreach (Animal castillo in farm)
+{
+    // it is not possible to call the name of the animal because it was
+    // set as protected. It would be possible with public
+    castillo.Eat();
+    castillo.Move();
+}
+
+LinkedList<Flyable> airness = new LinkedList<Flyable>();
+airness.AddLast(donald);
+airness.AddLast(new Plane());
+
+foreach (Flyable air in airness)
+{
+    air.Fly();
+}
+

@@ -1,6 +1,6 @@
 namespace ClassThree_VerticalRelations;
 
-internal class Duck: Animal
+internal class Duck: Animal, Flyable
 {
     public int Wings { get; set; }
 
@@ -14,9 +14,12 @@ internal class Duck: Animal
     {
         this.Fly();
     }
-
+    
     public void Fly()
     {
-        Console.WriteLine("I am flying!");
+        Console.WriteLine("I am flying with polymorphism!");
     }
+    
+    
+    
 }
