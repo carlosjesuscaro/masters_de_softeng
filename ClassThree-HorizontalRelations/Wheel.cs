@@ -1,7 +1,6 @@
-using System.Diagnostics;
-
 namespace Class_Three;
 
+// Horizontal relationship: aggregation
 internal class Wheel
 {
     public Car attachedTo { get; set; }

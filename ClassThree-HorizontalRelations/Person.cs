@@ -1,5 +1,6 @@
 namespace Class_Three;
 
+// Horizontal relationship: composition
 internal class Person
 {
     private Head hd { get; }

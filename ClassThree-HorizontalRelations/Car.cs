@@ -1,5 +1,6 @@
 namespace Class_Three;
 
+// Horizontal relationship: aggregation
 internal class Car
 {
     public Wheel[] wheels { get; } 

@@ -2,6 +2,7 @@
 
 namespace Class_Three;
 
+// Horizontal relationship: association
 internal class Teacher
 {
     public List<Student> course_participant { get; } 
