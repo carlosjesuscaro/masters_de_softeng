@@ -4,7 +4,7 @@ using System.ComponentModel.Design;
 
 class Program
 { 
-    static void Main()
+    private static void Main()
     {
         Console.WriteLine("\nWelcome to the Student Management System");
         Console.WriteLine("\nPlease enter one of the following options:\n");
@@ -26,10 +26,6 @@ class Program
         string answer = Console.ReadLine().ToLower();
         switch (answer)
         {
-            case "4":
-                Console.WriteLine("Good bye!");
-                power = false;
-                break;
             case "1":
                 Console.WriteLine("you chose 1");
                 Thread.Sleep(2000);
@@ -42,6 +38,10 @@ class Program
             case "3":
                 Console.WriteLine("you chose 3");
                 power = true;
+                break;
+            case "4":
+                Console.WriteLine("Good bye!");
+                power = false;
                 break;
             default:
                 Console.WriteLine("Incorrect entry, try again");
