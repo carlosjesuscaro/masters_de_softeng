@@ -7,19 +7,61 @@ internal class Teacher: Person
     {
         this.salary = salary;
     }
-    
-    public Teacher changeSalary(int salary)
+
+    public override void change(string choice)
     {
-        if (this.salary != salary)
+        switch (choice)
         {
-            this.salary = salary;
-            Console.WriteLine("Salary has been updated");
-            return this;
-        }
-        else
-        {
-            Console.WriteLine("Salary is the same");
-            return this;
+            case "a":
+                Console.WriteLine("Enter the new first name!");
+                string fname = Console.ReadLine();
+                if (this.first_name != fname)
+                {
+                    this.first_name = fname;
+                    Console.WriteLine("First name has been updated");
+                }
+                else
+                {
+                    Console.WriteLine("First name is the same");
+                }
+                break;
+            case "b":
+                Console.WriteLine("Enter the new last name!");
+                string lname = Console.ReadLine();
+                if (this.last_name != lname)
+                {
+                    this.last_name = lname;
+                    Console.WriteLine("New name has been updated");
+                }
+                else
+                {
+                    Console.WriteLine("First name is the same");
+                }
+                break;
+            case "c":
+                Console.WriteLine("Enter the new salary");
+                int salary;
+                try
+                {
+                    salary = int.Parse(Console.ReadLine());
+                    if (this.salary != salary)
+                    {
+                        this.salary = salary;
+                        Console.WriteLine("Salary has been updated");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Salary is the same");
+                    }
+                }
+                catch
+                {
+                    Console.WriteLine("Invalid entry");
+                }
+                break;
+            default:
+                Console.WriteLine("Something else was chosen ... ");
+                break;
         }
     }
     

@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.CompilerServices;
 using System.Runtime.Versioning;
 
@@ -33,7 +34,8 @@ internal class App
                     Show(this.people);
                     break;
                 case "2":
-                    Console.WriteLine("you chose 2");
+                    Console.WriteLine("Option selected: 'Edit'");
+                    Edit(this.people);
                     break;
                 case "3":
                     Console.WriteLine("Option selected: 'Add a person'");
@@ -114,5 +116,42 @@ internal class App
             Console.WriteLine($"[{index}] {subject.Showing()}");
             index++;
         }
+    }
+
+    public void Edit(List<Person> people)
+    {
+        Console.WriteLine("Enter the index of the person to edit:");
+        int choice;
+        try
+        {
+            choice = int.Parse(Console.ReadLine());
+            if (choice < people.Count())
+            {
+                changeMenu(people, choice);
+            }
+        }
+        catch
+        {
+            Console.WriteLine("Invalid entry");
+        }
+        
+    }
+
+    public void changeMenu(List<Person> people, int index)
+    {
+        
+        Console.WriteLine("Choose what you want to change:");
+        string message = "(A) First name, (B) Last name or ";
+        if (people[index] is Teacher)
+        {
+            message += "(C) Salary";
+        } else if (people[index] is Student)
+        {
+            message += "(C) Year";
+        }
+        Console.WriteLine(message);
+
+        string usr_choice = Console.ReadLine().ToLower();
+        people[index].change(usr_choice);
     }
 }
