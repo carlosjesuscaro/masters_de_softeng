@@ -40,4 +40,9 @@ internal class Person
             return this;
         }
     }
+
+    public virtual string Showing()
+    {
+        return $"First name: {this.first_name} Last name: {this.last_name}";
+    }
 }

@@ -7,4 +7,24 @@ internal class Teacher: Person
     {
         this.salary = salary;
     }
+    
+    public Teacher changeSalary(int salary)
+    {
+        if (this.salary != salary)
+        {
+            this.salary = salary;
+            Console.WriteLine("Salary has been updated");
+            return this;
+        }
+        else
+        {
+            Console.WriteLine("Salary is the same");
+            return this;
+        }
+    }
+    
+    public override string Showing()
+    {
+        return $"{base.Showing()} Role: Teacher";
+    }
 }
