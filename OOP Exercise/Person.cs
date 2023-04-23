@@ -10,4 +10,34 @@ internal class Person
         this.first_name = first;
         this.last_name = last;
     }
+
+    public Person changeFirst (string first)
+    {
+        if (this.first_name != first)
+        {
+            this.first_name = first;
+            Console.WriteLine("First name has been updated");
+            return this;
+        }
+        else
+        {
+            Console.WriteLine("First name is the same");
+            return this;
+        }
+    }
+
+    public Person changeLast(string last)
+    {
+        if (this.last_name != last)
+        {
+            this.last_name = last;
+            Console.WriteLine("Last name has been updated");
+            return this;
+        }
+        else
+        {
+            Console.WriteLine("Last name is the same");
+            return this;
+        }
+    }
 }

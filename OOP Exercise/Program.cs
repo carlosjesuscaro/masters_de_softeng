@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using OOP_Exercise;
+using System.ComponentModel;
 using System.ComponentModel.Design;
 
 class Program
@@ -9,6 +11,7 @@ class Program
         Console.WriteLine("\nWelcome to the Student Management System");
         Console.WriteLine("\nPlease enter one of the following options:\n");
         bool session = true;
+        List<Person> people = new List<Person>();
 
         while (session)
         {
@@ -28,7 +31,6 @@ class Program
         {
             case "1":
                 Console.WriteLine("you chose 1");
-                Thread.Sleep(2000);
                 power = true;
                 break;
             case "2":
@@ -36,7 +38,7 @@ class Program
                 power = true;
                 break;
             case "3":
-                Console.WriteLine("you chose 3");
+                Console.WriteLine("Option selected: adding a person");
                 power = true;
                 break;
             case "4":
@@ -44,7 +46,7 @@ class Program
                 power = false;
                 break;
             default:
-                Console.WriteLine("Incorrect entry, try again");
+                Console.WriteLine("Incorrect entry, try again!");
                 power = true;
                 break;
         }
