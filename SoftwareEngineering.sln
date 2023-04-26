@@ -1,16 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassOne", "ClassOne\ClassOne.csproj", "{F6573DDB-2E64-4283-B4C0-95F2755B0314}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassOne", "ClassOne\ClassOne.csproj", "{F6573DDB-2E64-4283-B4C0-95F2755B0314}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassTwo", "ClassTwo\ClassTwo.csproj", "{7D36D54B-FCF4-4272-914A-702206292092}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassTwo", "ClassTwo\ClassTwo.csproj", "{7D36D54B-FCF4-4272-914A-702206292092}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{79F6C460-7DD4-4F86-B670-6E4462DB427E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructures", "DataStructures\DataStructures.csproj", "{79F6C460-7DD4-4F86-B670-6E4462DB427E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassThree-HorizontalRelations", "ClassThree-HorizontalRelations\ClassThree-HorizontalRelations.csproj", "{B31F0DA5-4D7D-4FB0-A0E0-5C6C893107BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassThree-HorizontalRelations", "ClassThree-HorizontalRelations\ClassThree-HorizontalRelations.csproj", "{B31F0DA5-4D7D-4FB0-A0E0-5C6C893107BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassThree-VerticalRelations", "ClassThree-VerticalRelations\ClassThree-VerticalRelations.csproj", "{5325925F-99FB-4757-9337-B1BD61E70440}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassThree-VerticalRelations", "ClassThree-VerticalRelations\ClassThree-VerticalRelations.csproj", "{5325925F-99FB-4757-9337-B1BD61E70440}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP Exercise", "OOP Exercise\OOP Exercise.csproj", "{2EA70A9C-ACA5-4EDB-BF73-9E93EFE1E040}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP Exercise", "OOP Exercise\OOP Exercise.csproj", "{2EA70A9C-ACA5-4EDB-BF73-9E93EFE1E040}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCExercise", "MVCExercise\MVCExercise.csproj", "{461DE6DE-5B81-4C3A-9ADA-7A7AEDD81C37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,5 +47,12 @@ Global
 		{2EA70A9C-ACA5-4EDB-BF73-9E93EFE1E040}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EA70A9C-ACA5-4EDB-BF73-9E93EFE1E040}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EA70A9C-ACA5-4EDB-BF73-9E93EFE1E040}.Release|Any CPU.Build.0 = Release|Any CPU
+		{461DE6DE-5B81-4C3A-9ADA-7A7AEDD81C37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{461DE6DE-5B81-4C3A-9ADA-7A7AEDD81C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{461DE6DE-5B81-4C3A-9ADA-7A7AEDD81C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{461DE6DE-5B81-4C3A-9ADA-7A7AEDD81C37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
