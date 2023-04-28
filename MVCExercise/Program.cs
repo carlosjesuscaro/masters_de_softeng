@@ -1,3 +1,5 @@
+using MVCExercise.Model;
+
 namespace MVCExercise
 {
     internal static class Program
@@ -12,6 +14,8 @@ namespace MVCExercise
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
+
+            PersonRepository repo = PersonRepository.Instance;
         }
     }
 }

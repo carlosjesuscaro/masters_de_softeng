@@ -33,7 +33,7 @@ namespace MVCExercise.Model
 
         public override string ToString()
         {
-            return base.ToString() + $" Year = {this.Salary}";
+            return base.ToString() + $" Salary = {this.Salary}";
         }
     }
 }
