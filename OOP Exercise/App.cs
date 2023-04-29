@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.Versioning;
 
 namespace OOP_Exercise;
-internal class App
+internal class  App
 {
     public bool start { get; set; }
     private List<Person> people;
