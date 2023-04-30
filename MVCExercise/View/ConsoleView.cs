@@ -48,7 +48,7 @@ internal class ConsoleView
         this.printSelectPerson(all);
     }
 
-    public void deleteChoise(List<Person> all)
+    public void deleteChoice(List<Person> all)
     {
         Console.WriteLine("Who do you want to delete?");
         this.printSelectPerson(all);
@@ -58,6 +58,14 @@ internal class ConsoleView
     {
         Console.WriteLine($"{inputName} : ");
         return Console.ReadLine();
+    }
+
+    public void EditAttributeChoice(string[] attribute)
+    {
+        for (int i = 0; i < attribute.Count(); i++)
+        {
+            Console.WriteLine($"{(i + 1)} - {attribute[i]}");
+        }
     }
 
     public int getInputInt(string inputName)

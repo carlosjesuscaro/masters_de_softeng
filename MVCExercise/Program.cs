@@ -1,3 +1,4 @@
+using MVCExercise.Controller;
 using MVCExercise.Model;
 
 namespace MVCExercise
@@ -12,10 +13,8 @@ namespace MVCExercise
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
-
-            PersonRepository repo = PersonRepository.Instance;
+            // ApplicationConfiguration.Initialize();
+            PersonController.Boot();
         }
     }
 }
